@@ -18,7 +18,7 @@ async def prove_lean_file(
 ) -> str:
     """
     Submits a local Lean file to Aristotle to fill in 'sorry' placeholders.
-    Returns the Project ID immediately. The server will poll in the background and notify when done.
+    Returns the Project ID immediately. 
     """
     path = Path(file_path)
     if not path.exists():
@@ -34,7 +34,7 @@ async def prove_lean_file(
     )
     
     monitored_projects.add(project_id)
-    return f"Project started with ID: {project_id}. You will be notified when it completes."
+    return f"Project started with ID: {project_id}."
 
 @mcp.tool()
 async def prove_informal(
@@ -61,7 +61,7 @@ async def prove_informal(
     )
 
     monitored_projects.add(project_id)
-    return f"Project started with ID: {project_id}. You will be notified when it completes."
+    return f"Project started with ID: {project_id}."
 
 @mcp.tool()
 async def get_project_status(
