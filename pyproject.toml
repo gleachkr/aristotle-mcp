@@ -1,0 +1,11 @@
+[project]
+name = "aristotle-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aristotlelib>=0.6.0",
+    "fastmcp>=2.13.3",
+    "desktop-notifier>=3.5.0",
+]
