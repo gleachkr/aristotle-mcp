@@ -28,12 +28,6 @@ uv run main.py
 
 This will start the MCP server over stdio.
 
-## Features
-
--   **Asynchronous Processing**: Proving tasks return immediately to prevent timeouts.
--   **Desktop Notifications**: Receive a system notification when a proof completes.
--   **Full Context Access**: Retrieve complete project data, including generated Lean code, via tools or resources.
-
 ## Tools
 
 -   `prove_lean_file(file_path)`: Submit a Lean file for proving. Returns Project ID.
